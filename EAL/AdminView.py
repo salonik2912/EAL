@@ -7,6 +7,7 @@ def AdminLogin(request):
         result=request.session['ADMIN']
         return render(request, 'AdminDashBoard.html', {'result': result})
     except Exception as e:
+
         return render(request,'AdminLogin.html')
 
 def CheckAdminLogin(request):
